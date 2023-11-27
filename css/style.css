@@ -1,0 +1,10 @@
+body {
+    height: auto;
+    background: 
+    linear-gradient(180deg, rgba(125, 26, 252, 0.80) 0%, rgba(216, 174, 250, 0.80) 28.13%, rgba(152, 151, 194, 0.80) 59.9%, rgba(255, 255, 255, 0.80) 100%),
+    linear-gradient(180deg, #00B7F1 0%, #16B6E4 20%, #25B4DB 40%, #36B3D1 60%, #4FB1C2 80%, #FFF 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+}
