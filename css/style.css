@@ -1,3 +1,19 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'a-otf_midashi_go_mb31_promb31';
+    src: url(../font/a-otf_midashi_go_mb31_pro_mb31-webfont.woff2) format('woff2'),
+        url(../font/a-otf_midashi_go_mb31_pro_mb31-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+img, a {
+    user-select: none;
+    -webkit-user-drag: none;
+}
 body {
     height: auto;
     background: 
@@ -6,5 +22,161 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 5000px;
+}
+.container {
+    width: 100%;
+    position: relative;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/main-visual.webp);
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ester-egg {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    border-radius: 60px;
+    background-color: #000;
+    left: 45%;
+    top: 21%;
+    rotate: 10deg;
+    cursor: pointer;
+    opacity: 0;
+}
+.ester-egg > div {
+    height: 40px;
+    width: 40px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    transition: 0.5s;
+}
+.scroll-btn {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scroll-btn p {
+    color: #fff;
+    font-size: 2rem;
+}
+.hero-text {
+    font-family: 'a-otf_midashi_go_mb31_promb31';
+    font-size: 8rem;
+    color: #FFF;
+    text-shadow: 0px 4px 15px rgba(170, 203, 203, 0.87), 0px 0px 30px rgba(255, 255, 255, 0.40), 4px 4px 4px #000, 0px 0px 30px rgba(255, 255, 255, 0.40);
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-bar {
+    width: 100%;
+    height: 14.4rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.80) 22.4%, rgba(255, 255, 255, 0.80) 43.75%, rgba(255, 255, 255, 0.80) 64.06%, rgba(255, 255, 255, 0.05) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar .logo {
+    width: 41.9rem;
+    height: 14.4rem;
+    background: url(../img/top-log.webp) 100% 100% no-repeat;
+    cursor: pointer;
+}
+.nav-bar .nav-btn {
+    height: 100%;
+    width: auto;
+    display: flex;
+    margin-right: 8.5rem;
+}
+.nav-bar .nav-btn a {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #049DE1;
+    font-family: Kreon;
+    text-decoration: none;
+    margin-left: 5.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.nav-bar .nav-btn a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0.3rem;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #049DE1;
+    display: block;
+    transition: 0.3s;
+}
+.nav-bar .nav-btn a:hover::after {
+    width: 100%;
+}
+.main-content {
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.club-purpose {
+    margin-top: 8rem;
+    font-family: 'Inknut Antiqua', serif;
+    position: relative;
+}
+.club-purpose > .title {
+    color: #FFF;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 4rem;
+    letter-spacing: -0.2rem;
+    text-align: center;
+}
+.purpose-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7.4rem;
+}
+.purpose {
+    width: 29rem;
+    height: 29rem;
+    border-radius: 50%;
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.74) 11.17%, rgba(255, 255, 255, 0.00) 85.51%);
+    position: relative;
+}
+.purpose > p {
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: -0.09rem;
+    color: #01002F;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+.purpose > p > .title {
+    color: #0300A5;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -0.125rem;
+    text-align: center;
 }
